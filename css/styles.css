@@ -4,19 +4,12 @@ font-family: 'Roboto', sans-serif; */
 
 /* GENERAL STYLES */
 
-:root {
-  --hover-active-color: #2196F3;
-  --btn-color: #2196F3;
-  --btn-active-hover: #188CE8;
-  --main-font-color: #757575;
-  --navigation-link-color: #212121;
-  --address-link-color: #757575;
-  --background-dark-color: #2F303A;
-}
+
 
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--main-font-color);
+  background-color: var(--background-main-color);
 }
 
 h2 {
@@ -27,7 +20,20 @@ h2 {
 }
 
 .btn {
+  border: none;
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
   cursor: pointer;
+  background-color: var(--btn-color);
+}
+
+.btn:hover,
+.btn:active {
+  background-color: var(--btn-active-hover);
 }
 
 .logo[sitelogo="siteLogo"] {
@@ -54,11 +60,6 @@ a {
 /* ------------------------ */
 
 /* HEADER */
-.navigation-wrapper {
-  height: 80px;
-  background-color: #ECECEC;
-}
-
 .navigation-wrapper a {
 
   font-family: 'Roboto', sans-serif;
@@ -78,9 +79,7 @@ a {
 
 
 .slogan-wrapper {
-  height: 600px;
   background-color: var(--background-dark-color);
-  margin-bottom: 94px;
 }
 
 .slogan-wrapper h1 {
@@ -91,28 +90,11 @@ a {
 }
 
 .slogan-wrapper .btn {
-  width: 215px;
-  height: 50px;
-  border: none;
-  border-radius: 4px;
-  background-color: var(--btn-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.06em;
   color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
-.slogan-wrapper .btn:active,
-.slogan-wrapper .btn:hover {
-  background-color: var(--btn-active-hover);
-}
-
 /* FEATURES */
 .features {
-  margin-bottom: 94px;
 }
 
 .features-item {
@@ -124,7 +106,6 @@ a {
   font-weight: 700;
   line-height: 1.2;
   color: #212121;
-  margin-bottom: 10px;
 }
 
 .features-description {
@@ -136,14 +117,17 @@ a {
 
 /* OCCUPATION */
 .occupation {
-  margin-bottom: 94px;
   background-color: #FFFFFF;
 }
 
 
 /* OUT TEAM */
-.teams-member {
+.our-team {
   background-color: #F5F4FA;
+}
+
+.teams-member {
+background-color: var(--teamMember-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -152,7 +136,6 @@ a {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 50px;
 }
 
 .team-details {
@@ -164,7 +147,6 @@ a {
   font-weight: 500;
   line-height: 1.2;
   color: #212121;
-  margin-bottom: 10px;
 }
 
 /* FOOTER */
@@ -188,6 +170,7 @@ footer .logo-studio-part {
 
 .our-location {
   color: #fff;
+  font-style: normal;
 }
 
 .our-contacts a {
@@ -197,3 +180,65 @@ footer .logo-studio-part {
   color: #FFFFFF99;
 }
 
+/* ************************************************************************************************ */
+/* ************************************************************************************************ */
+/* ************************************************************************************************ */
+/* ************************************************************************************************ */
+/* ************************************************************************************************ */
+
+:root {
+  --hover-active-color: #2196F3;
+  --btn-color: #2196F3;
+  --btn-active-hover: #188CE8;
+  --main-font-color: #757575;
+  --navigation-link-color: #212121;
+  --address-link-color: #757575;
+  --background-dark-color: #2F303A;
+  --background-main-color: #fff;
+  --teamMember-background-color: #fff;
+
+
+  /* styles for PORTFOLIO PAGE */
+  --portfolio-btn-main-color: #212121;
+  --portfolio-btn-active-hover-color: #FFFFFF;
+  --portfolio-btn-main-background-color: #F5F4FA;
+  --portfolio-btn-main-active-hover-background-color: #2196F3;
+  --portfolio-project-title-color: #212121;
+  --portfolio-project-border-color: #EEEEEE
+}
+
+/* PORTFOLIO.HTML page */
+
+/* FILTERS */
+.project-filters .btn {
+  color: var(--portfolio-btn-main-color);
+  background-color: var(--portfolio-btn-main-background-color);
+}
+
+.project-filters .btn:hover,
+.project-filters .btn:active {
+  color: var(--portfolio-btn-active-hover-color);
+  background-color: var(--portfolio-btn-main-active-hover-background-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* PROJECTS CARDS */
+.projects .project-item {
+  border: 1px solid var(--portfolio-project-border-color);
+}
+
+.projects .project-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--portfolio-project-title-color);
+}
+
+.projects .project-type {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
