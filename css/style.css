@@ -1,0 +1,26 @@
+/* COLOR VARIABLES */
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  
+  --main-background-color: #FFFFFF;
+  --secondary-background-color: #F5F4FA;
+  --contrast-background-color: #2F303A;
+
+  --link-hover-focus-color: #2196F3;
+
+  --button-background-color: #2196F3;
+  --button-active-focus-background-color: #188CE8;
+}
+
+/*
+*** GENERAL ***
+*/
+body {  
+  /* color:;
+  background-color: ; */
+}
+
+.list {
+  list-style: none;
+}
