@@ -45,6 +45,14 @@ h3 {
   letter-spacing: 0.03em;
 }
 
+.logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
 a {
   text-decoration: none;
 }
@@ -70,12 +78,12 @@ a {
 
 /* HEADER */
 
-.main-navigation .logo {
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
+.main-navigation .logo-part-2 {
+  color: #000000;
+}
+
+.main-navigation .logo-part-1 {
+  color: #2196F3
 }
 
 .main-navigation .link,
@@ -141,4 +149,18 @@ a {
   font-size: 16px;
   line-height: 1.18; 
   text-align: center;
+}
+
+/* FOOTER */
+
+.main-footer .logo-part-2 {
+  /* color: #ffffff; */
+}
+
+.our-address {
+  font-style: normal;
+}
+
+.our-address .our-location {
+  /* color: #ffffff; */
 }
