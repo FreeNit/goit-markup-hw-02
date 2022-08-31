@@ -45,6 +45,10 @@ h3 {
   letter-spacing: 0.03em;
 }
 
+a {
+  text-decoration: none;
+}
+
 .list {
   list-style: none;
 }
@@ -119,3 +123,22 @@ h3 {
 }
 
 /* OUR ADVANTAGES */
+
+/* OUR OCCUPATION */
+
+/* OUR TEAM */
+.our-team {
+  background-color: var(--secondary-background-color);
+}
+
+.our-team .team-card {
+  background-color: var(--main-background-color);
+  text-align: center;
+}
+
+.team-card .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18; 
+  text-align: center;
+}
