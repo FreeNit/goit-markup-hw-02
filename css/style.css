@@ -11,6 +11,11 @@
 
   --button-background-color: #2196F3;
   --button-hover-focus-background-color: #188CE8;
+
+  /* PORTFOLIO PAGE VARIABLES */
+
+  --portfolio-btn-bg-color: #F5F4FA;
+  --portfolio-btn-hover-bg-color: #2196F3;
 }
 
 /*
@@ -164,3 +169,20 @@ a {
 .our-address .our-location {
   /* color: #ffffff; */
 }
+
+/* 
+**** PORTFOLIO PAGE ***
+*/
+
+/* FILTER SECTION */
+.filter .btn {
+  background-color: var(--portfolio-btn-bg-color);
+}
+
+.filter .btn:hover,
+.filter .btn:focus {
+  background-color: var(--portfolio-btn-hover-bg-color);
+  color: #FFFFFF;
+}
+
+/* OUR WORKS */
