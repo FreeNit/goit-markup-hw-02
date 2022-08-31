@@ -57,6 +57,10 @@ h3 {
   letter-spacing: 0.03em;
 }
 
+.logo-part-1 {
+  color: #2196F3
+}
+
 a {
   text-decoration: none;
 }
@@ -84,10 +88,6 @@ a {
 
 .main-navigation .logo-part-2 {
   color: #000000;
-}
-
-.main-navigation .logo-part-1 {
-  color: #2196F3
 }
 
 .main-navigation .link,
