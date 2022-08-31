@@ -17,10 +17,52 @@
 *** GENERAL ***
 */
 body {  
-  /* color:;
-  background-color: ; */
+  color: var(--primary-text-color);
+  background-color: var(--main-background-color); 
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;  
+  letter-spacing: 0.03em;
 }
 
 .list {
   list-style: none;
+}
+
+/*
+*** COMPONENTS ***
+*/
+
+/* HEADER */
+
+.main-navigation .logo {
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 26px;
+line-height: 1.2;
+letter-spacing: 0.03em;
+}
+
+.main-navigation .link,
+.contact-us .contact-info {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.main-navigation .link {
+  color: #212121;
+}
+
+.contact-us .mail,
+.contact-us .phone {
+  color: #757575
+}
+
+.main-navigation .link:hover,
+.main-navigation .link:focus,
+.contact-us .contact-info:hover,
+.contact-us .contact-info:focus {
+  color: var(--link-hover-focus-color)
 }
