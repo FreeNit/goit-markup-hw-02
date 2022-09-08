@@ -7,6 +7,8 @@
   --secondary-background-color: #F5F4FA;
   --contrast-background-color: #2F303A;
 
+  --logo-main-color: #2196F3;
+
   --link-hover-focus-color: #2196F3;
 
   --button-background-color: #2196F3;
@@ -55,10 +57,11 @@ h3 {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  color: #000000;
 }
 
-.logo-part-1 {
-  color: #2196F3
+.logo-main {
+  color: var(--logo-main-color)
 }
 
 a {
@@ -157,9 +160,6 @@ a {
 
 /* FOOTER */
 
-.page-footer .logo-part-2 {
-  /* color: #ffffff; */
-}
 
 .page-footer .contact-us {
   font-style: normal;
