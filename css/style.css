@@ -95,8 +95,12 @@ a {
   color: var(--logo-secondary-color)
 }
 
-.main-navigation .link {
+.link {
   color: var(--secondary-text-color);
+}
+
+.link.active {
+  color: var(--main-decor-color);
 }
 
 .page-header .contact-us .link {
