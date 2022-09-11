@@ -23,23 +23,33 @@ body {
   letter-spacing: 0.03em;
 }
 
-h2,
-h3 {
-  color: var(--secondary-text-color)
+.section-title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
 }
 
-h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+.section-title,
+.advantage-value,
+.member-name,
+.project-title {
+  color: var(--secondary-text-color);
 }
 
-h3 {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-}
+.visually-hidden {
+  position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+} 
 
 .logo {
   font-family: 'Raleway';
@@ -128,8 +138,11 @@ a {
 }
 
 /* OUR ADVANTAGES */
-
-.advantage-list .title {
+.advantage-value {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
@@ -149,7 +162,7 @@ a {
   text-align: center;
 }
 
-.team-card .title {
+.member-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -194,27 +207,35 @@ a {
 */
 
 /* FILTER SECTION */
-.filter .btn {
+.filter-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: #212121;
   background-color: var(--secondary-background-color);
+
 }
 
-.filter .btn:hover,
-.filter .btn:focus {
+.filter-btn:hover,
+.filter-btn:focus {
   background-color: var(--main-decor-color);
   color: var(--third-decor-color);
 }
 
 /* OUR WORKS */
 
-.our-projects .project-title {
+.project-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.our-projects .project-type {
+.project-type {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   color: var(--primary-text-color);
+  letter-spacing: 0.03em;
 }
