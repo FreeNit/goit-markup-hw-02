@@ -110,12 +110,13 @@ a {
   line-height: 1.14;
 }
 
-.link:hover,
+/* .link:hover,
 .link:focus,
 .page-footer .link:hover,
 .page-footer .link:focus {
   color: var(--main-decor-color);
-}
+} */
+
 
 /* HERO */
 
@@ -200,6 +201,11 @@ a {
 
 .contact-us .our-location {
   color: var(--third-decor-color);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--main-decor-color);
 }
 
 /* 
