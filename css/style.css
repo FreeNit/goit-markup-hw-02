@@ -21,6 +21,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
+  background-color: var(--third-decor-color);
 }
 
 .section-title {
@@ -51,7 +52,7 @@ body {
 }
 
 .logo {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -218,7 +219,7 @@ a {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--secondary-text-color);
   background-color: var(--background-color);
 }
 
